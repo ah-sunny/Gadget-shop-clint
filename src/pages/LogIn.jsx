@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { GoogleLogIn } from "../component/GoogleLogIn";
 import useAuth from "../hooks/useAuth";
 
 
@@ -69,6 +70,7 @@ const LogIn = () => {
                         
                         <div className="form-control mt-1">
                             <button type="submit" className="btn btn-primary ">Login</button>
+                            <GoogleLogIn></GoogleLogIn>
                         </div>
                         <p className="text-sm" >Create new account
                             <Link to='/Register' className="text-blue-900 " > Register</Link>

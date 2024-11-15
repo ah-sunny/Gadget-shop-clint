@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { GoogleLogIn } from "../component/GoogleLogIn";
 import useAuth from "../hooks/useAuth";
 
 const Register = () => {
@@ -64,7 +65,12 @@ const Register = () => {
 
     return (
         <div className="hero bg-base-200 min-h-screen">
-            <div className="hero-content flex-col lg:flex-row-reverse  ">
+            <div className="hero-content flex-col lg:flex-row-reverse bg-no-repeat bg-cover "
+             style={{
+                backgroundImage: "url('/public/Register.jpg')",
+               
+            }}
+            >
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Register now!</h1>
                     <p className="py-6">
@@ -134,6 +140,7 @@ const Register = () => {
 
                         <div className="form-control mt-1">
                             <button type="submit" className="btn btn-primary ">Register</button>
+                            <GoogleLogIn></GoogleLogIn>
                         </div>
                         <p className="text-sm" >Already have an account?
                             <Link to='/login' className="text-blue-900 " > Login</Link>
@@ -148,9 +155,3 @@ const Register = () => {
 
 export default Register;
 
-
-// validate: (value) => {
-//     if (watch('password') != value) {
-//         return "Your passwords don't match";
-//     }
-// },
