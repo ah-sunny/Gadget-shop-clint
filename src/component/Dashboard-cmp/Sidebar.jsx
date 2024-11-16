@@ -28,16 +28,16 @@ export const Sidebar = () => {
                         userData.role === 'buyer' &&
                         <>
                             <li>
-                                <Link to="/dashboard/my-product" className="flex justify-center items-center gap-2 border-2 rounded-md border-black p-1"
+                                <Link to="/dashboard/avaiable" className="flex justify-center items-center gap-2 border-2 rounded-md border-black p-1"
 
                                 >
                                     <FaOpencart />
-                                    My Product</Link>
+                                    Available Product</Link>
                             </li>
                             <li>
-                                <Link to="/dashboard/add-product" className="flex justify-center items-center gap-2 border-2 rounded-md border-black p-1" >
+                                <Link to="/dashboard/wishlist" className="flex justify-center items-center gap-2 border-2 rounded-md border-black p-1" >
                                     <FaCartPlus />
-                                    Add Product</Link>
+                                    wishlist</Link>
                             </li>
                         </>
                     }
@@ -52,12 +52,12 @@ export const Sidebar = () => {
 
                                 >
                                     <FaOpencart />
-                                    seller Product</Link>
+                                    My Product</Link>
                             </li>
                             <li>
                                 <Link to="/dashboard/add-product" className="flex justify-center items-center gap-2 border-2 rounded-md border-black p-1" >
                                     <FaCartPlus />
-                                    Product price</Link>
+                                    Add Product</Link>
                             </li>
 
 

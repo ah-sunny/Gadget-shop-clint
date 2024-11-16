@@ -1,14 +1,22 @@
 import PropTypes from 'prop-types';
 import { Navigate, useLocation } from 'react-router-dom';
+import { Loading } from '../component/loading/Loading';
+import useAuth from '../hooks/useAuth';
+import useUserData from '../hooks/useUserData';
 
 const BuyerRoute = ({children}) => {
-    // const { user, loading } = useAuth()
-    // const [userData] = useUserData()
-    const location = useLocation();
-  
-   
+    const {user, loading} = useAuth();
+const location = useLocation()
+const userData = useUserData()
 
-    return <Navigate state={location.pathname} to="/login" replace></Navigate>;
+if(loading || !userData.role ){
+    return <Loading/>
+}
+if(user && userData.role == 'buyer'){
+    return children;
+}
+
+    return <Navigate to='/' state={{from: location}} replace></Navigate>
 };
 BuyerRoute.propTypes = {
     children: PropTypes.node
