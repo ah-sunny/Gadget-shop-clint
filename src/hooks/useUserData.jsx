@@ -12,7 +12,8 @@ const useUserData = () => {
             try {
                 const res = await axios.get(`http://localhost:4000/users/${user?.email}`);
                 setUserData(res?.data)
-                // console.log(res.data)
+    
+                
                 // console.log("in hook", userData)
             } catch (error) {
                 console.error(error)
