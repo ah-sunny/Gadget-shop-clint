@@ -1,3 +1,4 @@
+import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
@@ -22,28 +23,28 @@ const handleGoogleLogin=()=>{
             status: "approved",
             wishlist: []
         }
-        console.log(userDetails)
+        console.log("user details",userDetails)
 
-        // axios.post('http://localhost:4000/users', userDetails)
-        // .then(res => {
-        //     if (res.data.insertedId) {
-        //         // console.log('user added to the database')
-        //         reset();
-        //         Swal.fire({
-        //             position: 'center',
-        //             icon: 'success',
-        //             title: 'User created successfully.',
-        //             showConfirmButton: false,
-        //             timer: 1500
-        //         });
+        axios.post('http://localhost:4000/users', userDetails)
+        .then(() => {
+            // if (res.data.insertedId) {
+            //     // console.log('user added to the database')
+                
+            //     Swal.fire({
+            //         position: 'center',
+            //         icon: 'success',
+            //         title: 'User created successfully.',
+            //         showConfirmButton: false,
+            //         timer: 1500
+            //     });
 
-        //         navigate("/");
-        //     }
-        // })
-        // .catch(error => {
-        //     // console.error(error)
-        //     toast.error(`${error.message}`)
-        // })
+            //     navigate("/");
+            // }
+        })
+        .catch(error => {
+            // console.error(error)
+            toast.error(`${error.message}`)
+        })
 
         
 

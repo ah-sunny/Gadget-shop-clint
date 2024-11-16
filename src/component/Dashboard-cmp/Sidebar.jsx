@@ -2,12 +2,14 @@ import { FaCartPlus, FaOpencart } from "react-icons/fa6";
 import { GrOverview } from "react-icons/gr";
 import { SiHomeadvisor } from "react-icons/si";
 import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 import useUserData from "../../hooks/useUserData";
 
 
 export const Sidebar = () => {
     const userData = useUserData()
-    console.log("current user details : ", userData)
+    const {logOut} = useAuth()
+    // console.log("current user details : ", userData)
     return (
         <div className="bg-gray-300 border-r-2 border-r-black min-h-screen p-5" >
             <h1 className="text-3xl font-bold mx-auto text-center my-7 " >Gadget Shop</h1>
@@ -68,7 +70,7 @@ export const Sidebar = () => {
                             <SiHomeadvisor />
                             Home</Link>
                     </li>
-                    <button>Logout</button>
+                    <button className="flex justify-center items-center gap-2 border-2 rounded-md border-black p-1" onClick={()=>logOut()}>Logout</button>
                 </ul>
 
 
