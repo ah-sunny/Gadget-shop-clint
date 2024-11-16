@@ -1,4 +1,6 @@
-import Usercard from "../Usercard";
+// import Usercard from "../Usercard";
+
+import Usercard from "../Card/Usercard";
 
 
 function UserInfo() {
