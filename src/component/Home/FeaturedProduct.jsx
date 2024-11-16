@@ -3,7 +3,7 @@ import ProductCard from "../ProductCard";
 
 const FeaturedProduct = () => {
     return (
-        <div className="flex justify-between gap-5 ">
+        <div className=" mx-auto lg:flex justify-between gap-5 ">
             <ProductCard></ProductCard>
             <ProductCard></ProductCard>
             <ProductCard></ProductCard>

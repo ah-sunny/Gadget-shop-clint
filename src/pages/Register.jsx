@@ -1,75 +1,92 @@
+import axios from "axios";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Swal from "sweetalert2";
 import { GoogleLogIn } from "../component/GoogleLogIn";
 import useAuth from "../hooks/useAuth";
 
 const Register = () => {
-   const {createUser } = useAuth()
-   const navigate = useNavigate()
+    const { createUser } = useAuth()
+    const navigate = useNavigate()
 
 
     const {
         register,
         handleSubmit,
         watch,
+        reset,
         formState: { errors },
     } = useForm()
 
     const handleRegister = (data) => {
         // console.log(data)
         console.log("clicked register butto")
-               //create user
-               createUser(data.email, data.password)
-            //    .then(() => {
-            //        // console.log(result.user)
-            //        updateUserProfile(data.name, data.photoURL)
-            //            .then(() => {
-            //                // console.log("user profile info updated")
-            //                // create user entry in the database
-            //                const userInfo = {
-            //                    name: data.name,
-            //                    email: data.email,
-            //                    photoURL: data.photoURL,
-            //                }
-            //                axiosPublic.post('/users', userInfo)
-            //                    .then(res => {
-            //                        if (res.data.insertedId) {
-            //                            // console.log('user added to the database')
-            //                            reset();
-            //                            Swal.fire({
-            //                                position: 'top-end',
-            //                                icon: 'success',
-            //                                title: 'User created successfully.',
-            //                                showConfirmButton: false,
-            //                                timer: 1500
-            //                            });
-            //                            logOut();
-            //                            navigate("/login");
-            //                        }
-            //                    })
-            //            })
-            //    })
-            .then((result)=>{
+        const name = data.email.split("@")[0]
+        const userDetails = {
+            name: name,
+            email: data.email,
+            photoURL: data.photoURL,
+            role : data?.role,
+            status : data.role === "buyer" ? "approved ": "pending",
+            wishlist: []
+        }
+        // console.log(userDetails)
+        //create user
+        createUser(data.email, data.password)
+            .then((result) => {
                 console.log(result.user)
-                toast.success("user created")
-                navigate('/')
+                //    updateUserProfile(data.name, data.photoURL)
+                //    .then(() => {
+                //        // console.log("user profile info updated")
+                //        // create user entry in the database
+                //        const userInfo = {
+                //            name: data.name,
+                //            email: data.email,
+                //            photoURL: data.photoURL,
+                //    }
+                axios.post('http://localhost:4000/users', userDetails)
+                    .then(res => {
+                        if (res.data.insertedId) {
+                            // console.log('user added to the database')
+                            reset();
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'User created successfully.',
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+
+                            navigate("/");
+                        }
+                    })
+                    .catch(error => {
+                        // console.error(error)
+                        toast.error(`${error.message}`)
+                    })
+                //    })
             })
-               .catch(error => {
-                   // console.error(error)
-                   toast.error(`${error.message}`)
-               })
+            // .then((result)=>{
+            //     console.log(result.user)
+            //     toast.success("user created")
+            //     navigate('/')
+            // })
+            .catch(error => {
+                // console.error(error)
+                toast.error(`${error.message}`)
+            })
 
     }
 
     return (
         <div className="hero bg-base-200 min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse bg-no-repeat bg-cover "
-             style={{
-                backgroundImage: "url('/public/Register.jpg')",
-               
-            }}
+                style={{
+                    backgroundImage: "url('/public/Register.jpg')",
+
+                }}
             >
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Register now!</h1>
@@ -125,10 +142,10 @@ const Register = () => {
 
                         </div>
                         <div className="form-control">
-                        <label className="label">
+                            <label className="label">
                                 <span className="label-text">Role</span>
                             </label>
-                            <select {...register("role", { required: true,})}  className="select select-bordered w-full max-w-xs">
+                            <select {...register("role", { required: true, })} className="select select-bordered w-full max-w-xs">
                                 {/* <option disabled selected>Select the Role</option> */}
                                 <option value='buyer' >buyer</option>
                                 <option value='seller' >seller</option>

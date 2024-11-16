@@ -8,10 +8,45 @@ export const GoogleLogIn = () => {
     const {GoogleLogin} = useAuth();
     const navigate = useNavigate()
 const handleGoogleLogin=()=>{
+
     GoogleLogin()
-    
     .then((result)=>{
-        console.log(result.user)
+        console.log("google",result.user)
+
+        const userDetails = {
+            name: result?.user?.displayName,
+            email: result?.user?.email,
+            photoURL: result?.user?.photoURL,
+            role : "buyer",
+            // status : userDetails?.role === "buyer" ? "approved ": "pending",
+            status: "approved",
+            wishlist: []
+        }
+        console.log(userDetails)
+
+        // axios.post('http://localhost:4000/users', userDetails)
+        // .then(res => {
+        //     if (res.data.insertedId) {
+        //         // console.log('user added to the database')
+        //         reset();
+        //         Swal.fire({
+        //             position: 'center',
+        //             icon: 'success',
+        //             title: 'User created successfully.',
+        //             showConfirmButton: false,
+        //             timer: 1500
+        //         });
+
+        //         navigate("/");
+        //     }
+        // })
+        // .catch(error => {
+        //     // console.error(error)
+        //     toast.error(`${error.message}`)
+        // })
+
+        
+
         toast.success("user log in succesfully")
         navigate('/')
     })
