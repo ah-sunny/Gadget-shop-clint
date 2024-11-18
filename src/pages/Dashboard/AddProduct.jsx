@@ -23,7 +23,7 @@ export const AddProduct = () => {
             price: data?.price,
             stock: data?.stock,
             brand: data?.brand,
-            discription: data?.discription,
+            description: data?.description,
             sellerEmail: user?.email
         }
         console.log("prodyct", product)
@@ -113,8 +113,8 @@ export const AddProduct = () => {
                             <label className="label">
                                 <span className="label-text">Description</span>
                             </label>
-                            <input {...register("discription", { required: true })} type="text" placeholder="Product Description" className="textarea textarea-bordered h-20" />
-                            {errors.discription && <span className="text-red-500 text-xs" >Discription is required</span>}
+                            <input {...register("description", { required: true })} type="text" placeholder="Product Description" className="textarea textarea-bordered h-20" />
+                            {errors.description && <span className="text-red-500 text-xs" >Description is required</span>}
                         </div>
                     </div>
                     <div className="form-control mt-5">

@@ -1,0 +1,212 @@
+[
+    {
+        "title": "Wireless Headphones",
+        "image": "https://example.com/images/wireless-headphones.jpg",
+        "category": "Audio",
+        "price": 120,
+        "stock": 15,
+        "brand": "SoundMax",
+        "description": "Immerse yourself in premium sound quality with wireless headphones featuring advanced noise cancellation, crystal-clear audio, and a comfortable design for long listening sessions.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Smartphone",
+        "image": "https://example.com/images/smartphone.jpg",
+        "category": "Mobiles",
+        "price": 699,
+        "stock": 30,
+        "brand": "TechOne",
+        "description": "A stylish smartphone equipped with a lightning-fast processor, stunning OLED display, and superior camera for capturing life’s best moments effortlessly.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "4K TV",
+        "image": "https://example.com/images/4k-tv.jpg",
+        "category": "Entertainment",
+        "price": 450,
+        "stock": 20,
+        "brand": "VisionTech",
+        "description": "Enjoy vivid colors and unmatched picture clarity with this Ultra HD 4K TV, featuring an immersive display and smart capabilities for streaming your favorite content.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Gaming Console",
+        "image": "https://example.com/images/gaming-console.jpg",
+        "category": "Gaming",
+        "price": 299,
+        "stock": 25,
+        "brand": "PlayGamer",
+        "description": "Level up your gaming experience with a next-gen console offering realistic graphics, faster load times, and a vast library of games.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Smartwatch",
+        "image": "https://example.com/images/smartwatch.jpg",
+        "category": "Wearables",
+        "price": 150,
+        "stock": 10,
+        "brand": "WristTech",
+        "description": "Track your fitness goals, receive notifications, and stay connected with a sleek and intuitive smartwatch designed for your busy lifestyle.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Bluetooth Speaker",
+        "image": "https://example.com/images/bluetooth-speaker.jpg",
+        "category": "Audio",
+        "price": 50,
+        "stock": 50,
+        "brand": "SoundBlast",
+        "description": "Take the party anywhere with a portable Bluetooth speaker delivering booming bass, water-resistant design, and long-lasting battery life.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Laptop",
+        "image": "https://example.com/images/laptop.jpg",
+        "category": "Computers",
+        "price": 1200,
+        "stock": 18,
+        "brand": "ProCompute",
+        "description": "Boost your productivity with this high-performance laptop, featuring a sleek design, powerful specs, and advanced security features.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Tablet",
+        "image": "https://example.com/images/tablet.jpg",
+        "category": "Mobiles",
+        "price": 350,
+        "stock": 40,
+        "brand": "TabNext",
+        "description": "Stream, browse, and connect on this versatile tablet with a high-resolution display, fast processor, and lightweight design for ultimate convenience.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Drone",
+        "image": "https://example.com/images/drone.jpg",
+        "category": "Cameras",
+        "price": 600,
+        "stock": 10,
+        "brand": "SkyView",
+        "description": "Soar to new heights with an advanced drone equipped with a 4K camera, intelligent flight modes, and extended battery life.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Premium Smartphone",
+        "image": "https://example.com/images/premium-smartphone.jpg",
+        "category": "Mobiles",
+        "price": 899,
+        "stock": 20,
+        "brand": "TechOne",
+        "description": "Unleash the power of innovation with a premium smartphone offering ultra-fast performance, a vibrant display, and an exceptional camera system for professional-quality photos and videos.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Budget Smartphone",
+        "image": "https://example.com/images/budget-smartphone.jpg",
+        "category": "Mobiles",
+        "price": 199,
+        "stock": 50,
+        "brand": "ValueMobile",
+        "description": "Enjoy essential features and reliable performance with this budget-friendly smartphone, designed for efficient multitasking and smooth connectivity.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Gaming Smartphone",
+        "image": "https://example.com/images/gaming-smartphone.jpg",
+        "category": "Mobiles",
+        "price": 799,
+        "stock": 15,
+        "brand": "PlayPro",
+        "description": "Engineered for gamers, this smartphone delivers stunning graphics, fast frame rates, and advanced cooling systems for extended gaming sessions.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Camera Smartphone",
+        "image": "https://example.com/images/camera-smartphone.jpg",
+        "category": "Mobiles",
+        "price": 999,
+        "stock": 10,
+        "brand": "PhotoPro",
+        "description": "Elevate your photography skills with this smartphone featuring pro-grade cameras, incredible zoom, and dynamic editing tools.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Compact Smartphone",
+        "image": "https://example.com/images/compact-smartphone.jpg",
+        "category": "Mobiles",
+        "price": 499,
+        "stock": 25,
+        "brand": "MiniTech",
+        "description": "Pocket-sized convenience meets powerful performance in this compact smartphone, perfect for on-the-go lifestyles.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Luxury Smartphone",
+        "image": "https://example.com/images/luxury-smartphone.jpg",
+        "category": "Mobiles",
+        "price": 1200,
+        "stock": 8,
+        "brand": "EliteTech",
+        "description": "Experience the pinnacle of technology and craftsmanship with this luxury smartphone, featuring premium materials and cutting-edge features.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Dual-SIM Smartphone",
+        "image": "https://example.com/images/dual-sim-smartphone.jpg",
+        "category": "Mobiles",
+        "price": 249,
+        "stock": 40,
+        "brand": "FlexiConnect",
+        "description": "Stay connected wherever you go with this dual-SIM smartphone, offering flexibility and convenience for work and travel.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "5G Smartphone",
+        "image": "https://example.com/images/5g-smartphone.jpg",
+        "category": "Mobiles",
+        "price": 699,
+        "stock": 30,
+        "brand": "FastNet",
+        "description": "Stay ahead of the curve with this 5G smartphone, providing lightning-fast speeds and superior connectivity for a seamless online experience.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "VR Headset",
+        "image": "https://example.com/images/vr-headset.jpg",
+        "category": "Gaming",
+        "price": 199,
+        "stock": 25,
+        "brand": "VirtualPlay",
+        "description": "Immerse yourself in the world of virtual reality with a headset offering stunning visuals and responsive controls.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Smart Home Assistant",
+        "image": "https://example.com/images/smart-home-assistant.jpg",
+        "category": "Home",
+        "price": 80,
+        "stock": 35,
+        "brand": "HomeSmart",
+        "description": "Control your home with voice commands and enjoy smart integration with various devices through this intelligent home assistant.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Action Camera",
+        "image": "https://example.com/images/action-camera.jpg",
+        "category": "Cameras",
+        "price": 250,
+        "stock": 20,
+        "brand": "GoExplore",
+        "description": "Capture your adventures with this action camera featuring waterproof design, 4K recording, and various mounting options.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    },
+    {
+        "title": "Wireless Router",
+        "image": "https://example.com/images/wireless-router.jpg",
+        "category": "Networking",
+        "price": 100,
+        "stock": 30,
+        "brand": "NetSpeed",
+        "description": "Boost your internet connection with this wireless router, designed for speed, range, and multi-device support.",
+        "sellerEmail": "sunnycse03@gmail.com"
+    }
+]
