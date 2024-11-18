@@ -4,7 +4,7 @@ const ProductCard = ({ product }) => {
     // console.log(product)
     const { title, category, price, stock, brand, description } = product;
     return (
-        <div className="border-2 shadow-xl rounded-md ">
+        <div className="border-2 shadow-xl rounded-md h-fit ">
             <figure >
                 <img className="rounded-t-md h-48 w-full "
                     src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
