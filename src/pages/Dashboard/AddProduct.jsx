@@ -32,7 +32,7 @@ export const AddProduct = () => {
         console.log("token0",token)
 
         // post
-        axios.post('http://localhost:4000/products', product,{
+        axios.post('https://gadget-shop-server-ebon.vercel.app/products', product,{
             headers:{
                 Authorization: `Bearer ${token}`
             }

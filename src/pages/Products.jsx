@@ -43,7 +43,7 @@ export const Products = () => {
   useEffect(() => {
     setLoading(true);
     const fetch = async () => {
-      axios.get(`http://localhost:4000/all-product?title=${search}&page=${page}&limit=${9}&sort=${sort}&brand=${brand}&category=${category}`)
+      axios.get(`https://gadget-shop-server-ebon.vercel.app/all-product?title=${search}&page=${page}&limit=${9}&sort=${sort}&brand=${brand}&category=${category}`)
         .then(res => {
           console.log("first promise receive",res.data)
           setProducts(res.data.allProductList);

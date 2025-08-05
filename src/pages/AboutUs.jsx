@@ -1,3 +1,5 @@
+import aboutImage from '../assets/images/2672335-removebg-preview.jpg';
+
 /* eslint-disable react/no-unescaped-entities */
 export const AboutUs = () => {
   return (
@@ -21,11 +23,11 @@ export const AboutUs = () => {
                 Founded in 2023, our gadget shop started as a small blog dedicated to tech enthusiasts. We saw a need for a curated marketplace where customers could find high-quality, innovative gadgets without the overwhelming noise of larger retailers. Our passion for technology and commitment to customer satisfaction fueled our growth from a humble blog to a thriving online store.
               </p>
               <p className="text-gray-600">
-                We believe that technology should be accessible to everyone. That's why we've dedicated ourselves to sourcing the best gadgets, offering them at competitive prices, and providing expert support to our community. We're more than just a shop; we're a hub for innovation and a place where tech lovers can connect.
+                We believe that technology should be accessible to everyone. That&apos;s why we&apos;ve dedicated ourselves to sourcing the best gadgets, offering them at competitive prices, and providing expert support to our community. We're more than just a shop; we're a hub for innovation and a place where tech lovers can connect.
               </p>
             </div>
             <div>
-              <img src="./public/2672335-removebg-preview.png" alt="Our Story" className="rounded-lg shadow-lg" />
+              <img src={aboutImage} alt="Our Story" className="rounded-lg shadow-lg" />
             </div>
           </div>
         </section>

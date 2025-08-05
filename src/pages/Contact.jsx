@@ -1,3 +1,7 @@
+import image1 from '../assets/images/image1.png';
+import image2 from '../assets/images/image2.png';
+import image3 from '../assets/images/image3.png'; 
+
 /* eslint-disable react/no-unescaped-entities */
 export const Contact = () => {
   return (
@@ -62,19 +66,19 @@ export const Contact = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Team Member 1 */}
             <div className="text-center">
-              <img src="./public/image1.png"  className="w-32 h-32 rounded-full mx-auto mb-4" />
+              <img src={image1}  className="w-32 h-32 rounded-full mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-800">Mehedi Hasan</h3>
               <p className="text-gray-500">Co-Founder & CEO</p>
             </div>
             {/* Team Member 2 */}
             <div className="text-center">
-              <img src="./public/image2.png" alt="Team Member 2" className="w-32 h-32 rounded-full mx-auto mb-4" />
+              <img src={image2} alt="Team Member 2" className="w-32 h-32 rounded-full mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-800">Carolina Jons</h3>
               <p className="text-gray-500">Lead Developer</p>
             </div>
             {/* Team Member 3 */}
             <div className="text-center">
-              <img src="./public/image3.png" alt="Team Member 3" className="w-32 h-32 rounded-full mx-auto mb-4" />
+              <img src={image3} alt="Team Member 3" className="w-32 h-32 rounded-full mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-gray-800">Mona Ronalda</h3>
               <p className="text-gray-500">Marketing Director</p>
             </div>

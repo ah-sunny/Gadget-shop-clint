@@ -24,7 +24,7 @@ Our powerful search functionality allows users to easily find the products they'
 
 ## Live Demo
 
-[Link to Live Demo](https://your-live-demo-link.com)
+[Link to Live Demo](https://gadget-shop-4242.web.app/)
 
 ## Features
 
@@ -47,9 +47,9 @@ Our powerful search functionality allows users to easily find the products they'
 
 Your Name - sunnycse03@gmail.com
 
-Project Client code Link: [https://github.com/ahsunny/gadget-shop-clint](https://github.com/ah-sunny/gadget-shop-clint) 
+Project Client code Link: [https://github.com/ah-sunny/Gadget-shop-clint](https://github.com/ah-sunny/Gadget-shop-clint) 
 <br>
-Project server code Link: [https://github.com/ahsunny/gadget-shop-clint](https://github.com/ah-sunny/gadget-shop-clint)
+Project server code Link: [https://github.com/ah-sunny/Gadget-shop-server](https://github.com/ah-sunny/Gadget-shop-server)
 
 
 
