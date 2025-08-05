@@ -5,9 +5,9 @@ export const AboutUs = () => {
   return (
     <div className="bg-gray-100">
       {/* Hero Section */}
-      <section className="bg-blue-600 text-white py-20">
+      <section className="bg-blue-600 text-white py-9">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-extrabold sm:text-5xl md:text-6xl">About Our Gadget Shop</h1>
+          <h1 className="text-2xl lg:text-4xl font-bold ">About Our Gadget Shop</h1>
           <p className="mt-4 text-xl max-w-3xl mx-auto">Your one-stop destination for the latest and greatest in tech. Discover our story, our mission, and the values that drive us.</p>
         </div>
       </section>
