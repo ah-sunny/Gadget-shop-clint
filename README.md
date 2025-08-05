@@ -45,7 +45,7 @@ Our powerful search functionality allows users to easily find the products they'
 
 ## Code Link
 
-Your Name - sunnycse03@gmail.com
+Contact Gmail - sunnycse03@gmail.com
 
 Project Client code Link: [https://github.com/ah-sunny/Gadget-shop-clint](https://github.com/ah-sunny/Gadget-shop-clint) 
 <br>
@@ -66,7 +66,7 @@ To get a local copy up and running, follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username/gadget-shop-clint.git
+   git clone https://github.com/ah-sunny/Gadget-shop-clint.git
    ```
 2. Install NPM packages
    ```sh
