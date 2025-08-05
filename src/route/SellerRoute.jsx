@@ -25,3 +25,12 @@ SellerRoute.propTypes = {
 }
 
 export default SellerRoute;
+
+
+
+// Admin eamil : admin@gmail.com
+// Admin pass : Admin123$
+// Buyer eamil : buyer@gmail.com
+// Buyer pass : Buyer123$
+// Seler eamil : seller@gmail.com
+// Seler pass : Seller123$

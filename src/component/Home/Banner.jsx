@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
         <div
-            className="hero min-h-screen"
+            className="hero h-96"
             style={{
                 backgroundImage: "url(https://img.freepik.com/premium-photo/flat-lay-various-office-supplies-electronics-red-background_14117-693424.jpg?w=1060)",
             }}>
@@ -14,7 +15,9 @@ const Banner = () => {
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                         quasi. In deleniti eaque aut repudiandae et a id nisi.
                     </p>
-                    <button className="btn btn-primary">Get Started</button>
+                    <Link to={"/products"} className="btn btn-primary">
+                    <button  className="btn btn-primary">Buy Now </button>
+                    </Link>
                 </div>
             </div>
         </div>
