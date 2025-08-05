@@ -20,7 +20,7 @@ Our powerful search functionality allows users to easily find the products they'
 <!-- [🎥 Watch Demo Video](./src/assets/video/Gadget%20Shop%20Searching%20Feature%20.mp4) -->
 
 
-*You can show video by clicking this image. Its redirect to thia video page on loom website*
+*You can show video by clicking this image. Its redirect to that video page on loom website*
 
 ## Live Demo
 
