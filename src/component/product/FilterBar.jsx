@@ -13,7 +13,7 @@ const FilterBar = ({setCategory,setBrand, handleResetButtom,uniqueBrands,uniqueC
             {/* //lost phone */}
             <div>
                 <select onChange={(e)=>setBrand(e.target.value)} className="select select-sm select-bordered w-full max-w-xs">
-                    <option value=''>Brand</option>
+                    <option value=''>All Brand</option>
                     {
                         uniqueBrands.map((brand,idx)=>(<option key={idx} value={brand} >{brand}</option>))
                     }
@@ -21,7 +21,7 @@ const FilterBar = ({setCategory,setBrand, handleResetButtom,uniqueBrands,uniqueC
             </div>
             <div className=" my-2 ">
                 <select onChange={(e)=>setCategory(e.target.value)} className="select select-sm select-bordered w-full max-w-xs">
-                    <option  value='' >Category</option>
+                    <option  value='' >All Category</option>
                     {
                         uniqueCategorys.map((category,idx)=>(<option key={idx} value={category} >{category}</option>))
                     }

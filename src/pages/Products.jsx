@@ -30,7 +30,7 @@ export const Products = () => {
     e.preventDefault()
     const searchText = e.target.search.value;
     setSearch(searchText)
-    e.target.search.value = "";
+    // e.target.search.value = "";
   }
   const handleResetButtom = () => {
     setSearch("")
@@ -43,7 +43,7 @@ export const Products = () => {
   useEffect(() => {
     setLoading(true);
     const fetch = async () => {
-      axios.get(`http://localhost:4000/all-product?title=${search}&page=${page}&limit=${9}&sort=${sort}&brand=${brand}&category=${category}`)
+      axios.get(`https://gadget-shop-server-ebon.vercel.app/all-product?title=${search}&page=${page}&limit=${9}&sort=${sort}&brand=${brand}&category=${category}`)
         .then(res => {
           console.log("first promise receive",res.data)
           setProducts(res.data.allProductList);
@@ -74,8 +74,8 @@ export const Products = () => {
         <div> <Sorting setSort={setSort} /> </div>
       </div>
       {/* filter and product */}
-      <div className="grid grid-cols-12">
-        <div className="col-span-2 bg-gray-400 min-h-screen rounded-t-md p-5  ">
+      <div className="grid grid-cols-12 gap-1">
+        <div className="col-span-4 md:col-span-3 lg:col-span-2 bg-gray-400 min-h-screen rounded-t-md p-5  ">
           <div className=" ">
             <FilterBar
               setBrand={setBrand}
@@ -88,7 +88,7 @@ export const Products = () => {
         </div>
 
 
-        <div className="col-span-10 ">
+        <div className="col-span-8 md:col-span-9 lg:col-span-10 ">
 
           {
             loading ? (
@@ -101,7 +101,7 @@ export const Products = () => {
                       <h1 className="text-3xl font-bold mx-auto ">Product not found</h1>
                     </div>
                     :
-                    <div className="min-h-screen grid grid-cols-3 gap-3 ">
+                    <div className="min-h-screen grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
                       {
                         products.map((product) => (
                           <ProductCard key={product._id}

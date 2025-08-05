@@ -44,7 +44,7 @@ const AuthProvider = ({ children }) => {
             console.log('current user', currentUser);
             if(currentUser){
                 // const userInfo = { email: currentUser.email }; //its must be in under if func
-                axios.post("http://localhost:4000/jwt",{ email: currentUser?.email } )
+                axios.post("https://gadget-shop-server-ebon.vercel.app/jwt",{ email: currentUser?.email } )
                 .then(res=>{
                     if(res?.data?.token){
                         

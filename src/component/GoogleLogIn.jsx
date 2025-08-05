@@ -25,7 +25,7 @@ const handleGoogleLogin=()=>{
         }
         console.log("user details",userDetails)
 
-        axios.post('http://localhost:4000/users', userDetails)
+        axios.post('https://gadget-shop-server-ebon.vercel.app/users', userDetails)
         .then(() => {
             // if (res.data.insertedId) {
             //     // console.log('user added to the database')
